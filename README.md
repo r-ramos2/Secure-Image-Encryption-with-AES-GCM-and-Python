@@ -1,5 +1,19 @@
 # 🔐 Secure Image Encryption with AES-GCM and Python
 
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features and Benefits](#features-and-benefits)
+3. [Project Details](#project-details)
+   - [Security Considerations](#security-considerations)
+4. [How it Works](#how-it-works)
+5. [Usage Instructions](#usage-instructions)
+6. [Cryptographic Details](#cryptographic-details)
+7. [Best Practices for Secure Image Encryption](#best-practices-for-secure-image-encryption)
+8. [Conclusion](#conclusion)
+9. [Resources](#resources)
+
+---
+
 ## Introduction
 
 In today’s world, protecting sensitive data is paramount, and images often contain valuable or confidential information. This project demonstrates how to securely encrypt and decrypt images using the **Advanced Encryption Standard (AES)** in **GCM (Galois/Counter Mode)** with Python. The project showcases modern cryptographic principles, secure coding practices, and emphasizes the importance of both data confidentiality and integrity.
@@ -38,7 +52,7 @@ This project securely encrypts and decrypts images using Python’s `cryptograph
 - **Salt and IV Randomization**: Every encryption session generates a new random salt and IV, ensuring that the same image encrypted with the same password results in different ciphertexts, preventing replay attacks.
 - **Authenticated Encryption**: AES-GCM ensures that the data is authenticated, meaning that tampering with the ciphertext will cause decryption to fail.
 - **Code Hygiene**: Sensitive data such as passwords should not be hardcoded in the script. Use environment variables or a secure storage method to handle sensitive information.
-  
+
 By following these principles, this project demonstrates a practical understanding of secure encryption and secure coding practices, essential for a role in cybersecurity.
 
 ---
@@ -119,3 +133,12 @@ print("Image encryption and decryption completed successfully!")
 ## 🔚 Conclusion
 
 This project showcases a robust and secure method for encrypting and decrypting image data, adhering to industry-standard cryptographic practices. By employing **AES-GCM encryption**, key derivation through `PBKDF2HMAC`, and secure handling of sensitive data, it provides a practical example of secure coding in the field of cybersecurity.
+
+---
+
+## 🛠️ Resources
+- [NIST SP 800-63B Guidelines](https://pages.nist.gov/800-63-3/sp800-63b.html)
+- [OWASP Password Policy](https://owasp.org/www-project-cheat-sheets/cheatsheets/Password_Policy_Cheat_Sheet.html)
+- [Python Official Documentation](https://docs.python.org/3/)
+- [Cryptography Library Documentation](https://cryptography.io/en/latest/)
+- [AES Encryption Explained](https://www.khanacademy.org/computing/computer-science/cryptography/cryptography-basics/a/aes)
